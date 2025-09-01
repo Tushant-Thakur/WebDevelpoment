@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <!-- fhgegdv -->
-    <link rel="stylesheet" href="style.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
 </head>
 <body>
-     <div class="profile-container">
-    <img src="profilimage.jpg" alt="Profile Picture" width="150"  class="profile-img">
-    <h1>Tushant Pratap Singh</h1>
-    <p>Project Owner & DevSecOps Lead | Cloud Enthusiast | Optimization Seeker</p>
-    <p>Email: tushantthakur1962006@gmail.com</p>
-    <p>Location: Aligarh, UP, India</p>
-    
-    <div class="social-links">
-      <a href="https://github.com/Tushant-Thakur" target="_blank">GitHub</a> <br>
-      <a href="https://facebook.com" target="_blank">Facebook</a><br>
-      <a href="https://linkedin.com/in/Tushant" target="_blank">LinkedIn</a>
+  <h2>Contact form</h2>
+  <form action="backend.php">
+    <div>
+      Name: <input type="text" placeholder="Enter your name" >
     </div>
-  </div>
-
+    <div>
+      Email: <input type="email" placeholder="Enter your email.">
+    </div>
+    <div>
+      Phone: <input type="tel" placeholder="Enter your number">
+    </div>
+    <div>
+      Country <select name="countr">
+        <option value="India">India</option>
+        <option value="China">China</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="America">America</option>
+      </select>
+    </div>
+    <div>
+      Gender: Male<input type="radio" name="Gender"> Female<input type="radio" name="Gender">  
+    </div>  
+     <div>
+      Are you 18+ <input type="checkbox">
+    </div>
+    <div>
+      feedback: <textarea cols="40" rows="5" placeholder="your feedback is valuable for us "></textarea>
+    </div>
+    <div>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+ 
+  </form>
 </body>
 </html>
